@@ -1,0 +1,150 @@
+.maincontent{
+    display: flex;
+    width:100%;
+  
+    overflow-x: wrap;
+    position: relative;
+   margin-bottom: 20px;
+    
+    
+}
+.content{
+ display: flex;
+ flex-direction: row;
+ width: 60%;
+
+ position: relative;
+ left: 20%;
+ top: 10%;
+justify-content: space-between;
+
+
+
+}
+.left{
+
+  width:45%;
+  display: flex;
+  flex-direction: column;
+gap:10%;
+  animation: sidefromleft 2s ease forwards;
+
+}
+.right{
+  
+    height:80%;
+    width:45%;
+    display: flex;
+  
+   border-radius: 10%;
+   animation:opacity 2s ease ;
+   
+}
+#contentrightimage{
+    height:100%;
+    width:100%;
+ 
+    border-radius:10%;
+}
+.left span{
+  color: blue;
+    position: relative;
+    top:5%;
+
+}
+.left h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+}
+#startnowbutton{
+    background-color: rgb(40, 93, 226);
+    border:none;
+    color: rgb(243, 243, 243);
+ padding: 2%;
+ border-radius: 10%;
+ transition: color 0.5s;
+
+}
+#startnowbutton:hover{
+background-color: blue;
+}
+#taketourbutton{
+    background-color: rgba(0, 0, 0, 0.681);
+    border:none;
+    color: rgb(255, 255, 255);
+ padding: 2%;
+ border-radius: 10%;
+ transition: color 0.5s;
+ margin-left:5%;
+}
+#taketourbutton:hover{
+    background-color: rgb(1, 0, 0);
+    }
+@media (max-width:650px) {
+    .content{
+        flex-direction: column;
+        width:95%;
+         
+        top:0;
+       
+       left:5%;
+     
+    }
+    .left{
+        width:100%;
+        gap:5%;
+        overflow-x: wrap;
+       gap:50%;
+        height:100%;
+        margin-bottom: 20px;
+     
+    }
+    .right{
+        height: 40%;
+        position: relative;
+        width:100%;
+        
+      
+        justify-content: center;
+        align-items: center;
+    }
+    .left span{
+        text-align: center;
+    }
+    .contentbutton{
+        display: flex;
+       justify-content: center;
+    }
+    #contentrightimage{
+        height:100%;
+        width:50%;
+     
+        border-radius:10%;
+    }
+    
+}
+@keyframes sidefromleft{
+    from{
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(0%);
+        opacity: 1;
+    }
+
+}
+@keyframes opacity{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@media (max-width:900px) {
+    .left{
+        gap:3%;
+    }
+}
+
+    

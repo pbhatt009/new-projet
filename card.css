@@ -1,0 +1,175 @@
+:root {
+    --primary-color: #6366F1;
+    --accent-color: #3f83f8;
+    --text-color: #333333;
+    --link-color: #2563eb;
+    --background-color: #ffffff;
+    --light-gray: #f0f0f0;
+    --gray: #808080;
+    --dark-gray: #555;
+}
+.cardcontainer{
+    display: flex;
+    justify-content: center;
+    background-color: #f0f0f0;
+  
+    text-align: center;
+    
+}
+
+.card{
+    width:100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+    position: relative;
+    top:5%;
+    box-sizing: border-box;
+    
+}
+
+.top{
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+    margin:20px;
+}
+
+.bottom{
+    display: grid;
+    height: 70%;
+    width: 50%;
+    display: grid;
+   
+    grid-template-columns: repeat(2,1fr);
+
+    
+  
+    box-sizing: border-box;
+ 
+}
+
+
+.cardinfo{
+    box-sizing: border-box;
+    width: 90%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    padding-top: 10%;
+    padding-bottom: 10%;
+    justify-items: center;
+   
+    border-radius: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+   color: #000000;
+   font-size: .9em;
+   justify-content: space-between;
+  
+}
+
+#card1{
+    background-color: #4a90e2;
+    border-radius: 10%;
+}
+
+#card2{
+    background-color:#FF6289;
+    border-radius: 10%;
+}
+
+#card3{
+    background-color:#fcbf58;
+    border-radius: 10%;
+}   
+
+#card4{
+    background-color:#44bfc3;
+}
+
+#card5{
+    background-color:#77b05d;
+    border-radius: 10%;
+}
+
+#card6{
+    background-color:#7d78b1;
+    border-radius: 10%;
+}
+.imageinfo{
+    height:50%;
+    width: 50%;
+    position: relative;
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+   
+
+}
+
+.imageinfo img{
+   
+    width: 70%;
+    height: 70%;
+    border-radius: 50%;
+}
+@media (max-width:950px) {
+   .card{
+        width: 60%;
+        height: 100%;
+        gap:1%;
+        position: relative;
+        left:5%;
+        
+    }
+    .bottom{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(6,1fr);
+        width:100%;
+    }
+    .card{
+       
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      
+        position: relative;
+        top:5%;
+        box-sizing: border-box;
+        
+    }
+    
+}
+@media (max-width:600px) {
+    .card{
+         width: 80%;
+         height: 100%;
+         gap:1%;
+         position: relative;
+         left:5%;
+         
+     }
+     .bottom{
+         grid-template-columns: repeat(1,1fr);
+         grid-template-rows: repeat(6,1fr);
+         width:100%;
+     }
+     .card{
+        
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+       
+         position: relative;
+         top:5%;
+         box-sizing: border-box;
+         
+     }
+     
+ }

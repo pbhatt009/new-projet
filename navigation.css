@@ -1,0 +1,104 @@
+.header {
+   display: flex;
+
+   width:100%;
+   
+   flex-direction: row;
+   justify-content: space-between;
+  margin-bottom: 40px;
+
+  }
+  .headercontent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 100%;
+   position: relative;
+   left:15%;
+  }
+  .logo{
+   display: flex;
+    width:15%;
+ align-items: center;
+
+  }
+  #logoimage{
+   width:50%;
+   height: 100%;
+   border-radius: 20%;
+  }
+  .navbutton{
+    display: none;
+    width: 40%;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    gap:4%;
+   
+  }
+  .navbuttonanchor{
+    
+  
+    text-decoration: none;
+    color: rgb(31, 31, 31);
+    font-family:Arial, Helvetica, sans-serif;
+    transition:  color 0.5s;
+  
+  }
+  .navbuttonanchor:hover{
+    color: rgb(27, 0, 202);
+    
+  }
+  .contact{
+ width:12%;
+    display: none;
+   height: 100%;
+    justify-content:center;
+    align-items: center;
+
+  }
+  #contactbutton{
+  
+    height: 50%;
+   padding-left: 5%;
+   padding-right: 5%;
+    border-radius: 10%;
+    background-color: rgb(40, 93, 226);
+    color: aliceblue;
+    border:none;
+    transition: color 0.5s;
+  
+  }
+  #contactbutton:hover{
+    background-color: rgb(0, 0, 255);
+  }
+  .lines{
+    width:12%;
+    height: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+  }
+  #lineimage{
+    width: 50%;
+    height: 50%;
+  }
+@media (min-width: 750px) {
+    .navbutton{
+        display: flex;
+    }
+    .contact{
+        display: flex;
+    }
+    .lines{
+        display: none;
+    }
+    .headercontent{
+        width:70%;
+    }
+   
+    
+  
+
+}

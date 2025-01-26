@@ -1,0 +1,104 @@
+:root {
+    --primary-color: #6366F1;
+    --accent-color: #3f83f8;
+    --text-color: #333333;
+    --link-color: #2563eb;
+    --background-color: #ffffff;
+    --light-gray: #f0f0f0;
+    --gray: #808080;
+    --dark-gray: #555;
+}
+.submaincontent{
+    align-self: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items:center;
+  gap:10%;
+   margin:10px;
+  
+
+
+  animation:sidefromleft 2s ease forwards;
+}
+
+.company{
+     background-color:#f0f0f0;
+     display: flex;
+align-items: center;
+  
+   
+   
+    width: 100%;
+    border-radius: 10%;
+   
+}
+.companygrid{
+    width: 90%;
+    position: relative;
+    left:5%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+
+}
+.companyname{
+    display: flex;
+      
+    align-items: center;
+    justify-content: center;
+}
+
+.companyname img{
+    height: 50%;
+    width:25%;
+}
+
+@media (max-width:900px) {
+    .submaincontent{
+        
+       
+        height: 20%;
+    }
+    .company{
+       overflow-x: wrap;
+ 
+       height: 50%;
+   }
+   .companygrid{
+  
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+}
+.submaincontent{
+    height: 100%;
+}
+}
+@media (max-width:500px) {
+   
+    .company{
+       overflow-x: wrap;
+ 
+       height: 100%;
+   }
+   .companygrid{
+  
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+
+}
+.submaincontent{
+    height: 100%;
+}
+}
+@keyframes sidefromleft{
+    from{
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(0%);
+       
+    }
+
+}
